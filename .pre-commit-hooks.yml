@@ -1,0 +1,9 @@
+# This configuration file allows our pre-commit hooks to be used with pre-commit: http://pre-commit.com/
+
+- id: jsonnet-fmt
+  name: Jsonnet fmt
+  description: Rewrites all Jsonner configuration files to a canonical format
+  entry: hooks/jsonnet-fmt.sh
+  language: script
+  files: \.jsonnet$
+  require_serial: true
